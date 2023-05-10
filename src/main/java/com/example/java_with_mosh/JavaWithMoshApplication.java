@@ -433,7 +433,92 @@ public class JavaWithMoshApplication {
 //        String currency = NumberFormat.getCurrencyInstance().format(mortgage);
 //        System.out.println("Mortgage is "+currency);
 
-    }
+        //PROJECT PAYMENT SCHEDULE 3.0
+
+//        int principal = 0;
+//        double annualInterest =0;
+//        int years = 0;
+//        final int MONTH_OF_YEAR = 12;
+//
+//        principal=(int)readNumber("Principal:",1000,1_000_000);
+//        annualInterest=readNumber("Annual Interest Rate:",0.1,30);
+//        years = (int)readNumber("Period(years):",1,30);
+//
+//         double mortgage = calculateMortgage(principal,annualInterest,years);
+//
+//        String currency = NumberFormat.getNumberInstance().format(mortgage);
+//
+//        System.out.println("MORTGAGE");
+//        System.out.println("-------");
+//        System.out.println("Monthly payment: "+currency);
+//        printPaymentSchedule(principal, annualInterest, years, MONTH_OF_YEAR); // extract method -make your code more organized and easier to read.
+
+        //DEBUGGING AND PACKAGING APPLICATIONS
+        //types of errors
+        //there are three main types of errors:
+        //1. Syntax Errors: These errors occur when the programmer writes incorrect syntax in their code.
+        //2. Runtime Errors: Also known as exceptions, these errors occur during program execution.(dividing by zero, accessing an invalid index in an array, or trying to read from a null reference.
+        //3. Logical Errors: These errors occur when the code runs without throwing any exceptions, but the output or behavior of the program is not what was intended by the programmer.
+
+        //packaging java applications
+        System.out.println("hello world");
+
+       }
+
+
+//    private static void printPaymentSchedule(int principal, double annualInterest, int years, int MONTH_OF_YEAR) {
+//        System.out.println("PAYMENT SCHEDULE");
+//        System.out.println("-------------");
+//
+//        for (double month = 1; month<= years * MONTH_OF_YEAR; month++){
+//           double balance = calculateBalance(principal, annualInterest, years,(int) month);
+//           String currency1=NumberFormat.getNumberInstance().format(balance);
+//            System.out.println(currency1);
+//        }
+//    }
+    //IT IS FROM PROJECT PAYMENT SCHEDULE 3.0
+//        public static double calculateBalance(int principal,double annualInterest,int years,int payedMonth){
+//            final int MONTH_OF_YEAR = 12;
+//            final int PERCENT = 100;
+//
+//            double monthlyInterest = annualInterest/PERCENT/MONTH_OF_YEAR;
+//            int allMonth = years*MONTH_OF_YEAR;
+//
+//            double loanBalance = principal
+//                    *(Math.pow(1+monthlyInterest,allMonth) -(Math.pow(1+monthlyInterest,payedMonth)))
+//                    / (Math.pow(1+monthlyInterest,allMonth)-1);
+//            return loanBalance;
+//        }
+//
+//        public static double calculateMortgage(int principal,double annualInterest,int years){
+//            final int MONTH_OF_YEAR = 12;
+//            final int PERCENT = 100;
+//
+//            double monthlyInterest = annualInterest/PERCENT/MONTH_OF_YEAR;
+//            int allMonth = years*MONTH_OF_YEAR;
+//
+//            double mortgage = principal
+//                * (monthlyInterest*(Math.pow(1+monthlyInterest,allMonth)))
+//                / (Math.pow(1+monthlyInterest,allMonth)-1);
+//
+//            return mortgage;
+//        }
+//
+//
+//    public static double readNumber(String prompt,double min, double max){
+//            Scanner scanner = new Scanner(System.in);
+//            double value;
+//
+//            while (true){
+//                System.out.println(prompt);
+//                value = scanner.nextFloat();
+//                if (value>=min && value<=max)
+//                    break;
+//                System.out.println("Write the value between "+min +"and " +max);
+//            }
+//            return value;
+//        }
+
 //      IT IS FROM REFACTORING 1.0
 //    public static double calculateMortgage(int principal,double annualInterest,int years){
 //        final int MONTH_OF_YEAR = 12;
